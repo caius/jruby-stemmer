@@ -1,6 +1,6 @@
-# Jruby::Stemmer
+# JRuby::Stemmer
 
-TODO: Write a gem description
+Easily stem words in ruby, using a native java implementation of the porter stemming algorithm for speed. (Java equivalent of the fast-stemmer gem for MRI.)
 
 ## Installation
 
@@ -18,7 +18,10 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+You can either call the wrapper method yourself, or use the mixed in helper method `String#stem`.
+
+    JRuby::Stemmer.stem("apple") # => "appl"
+    "apple".stem # => "appl"
 
 ## Contributing
 
