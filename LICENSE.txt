@@ -1,3 +1,8 @@
+Excluding ext/java-stemmer/Stemmer.java -
+  see http://www.tartarus.org/~martin/PorterStemmer for that code
+
+
+
 Copyright (c) 2013 Caius Durling
 
 MIT License
