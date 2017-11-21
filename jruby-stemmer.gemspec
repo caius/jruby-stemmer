@@ -11,6 +11,7 @@ Gem::Specification.new do |gem|
   gem.description   = %q{Native java implementation of a string stemming algorithm. JRuby replacement for `fast-stemmer` gem under MRI.}
   gem.summary       = %q{Fast string stemming in JRuby}
   gem.homepage      = "https://github.com/caius/jruby-stemmer"
+  gem.license       = 'MIT'
 
   gem.files         = `git ls-files`.split($/)
   gem.executables   = gem.files.grep(%r{^bin/}).map{ |f| File.basename(f) }
