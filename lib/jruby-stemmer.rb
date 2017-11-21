@@ -6,9 +6,10 @@ module JRuby
     require "jruby"
     # include_package 'org.tartarus.martin.porter_stemmer'
     require_relative "java-stemmer"
+    java_import 'org.tartarus.martin.porter_stemmer.Stemmer'
 
     def self.stem string
-      stemmer = Java::OrgTartarusMartinPorter_Stemmer::Stemmer.new
+      stemmer = Stemmer.new
       java_string = string.to_java_string
       stemmer.add java_string.toCharArray, java_string.length
       stemmer.stem
